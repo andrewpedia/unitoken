@@ -139,7 +139,8 @@
     "start": "yarn compile-contract-types && react-scripts start",
     "test": "react-scripts test --env=./custom-test-env.js",
     "prei18n:extract": "touch src/locales/en-US.po",
-    "prestart": "yarn graphql:generate && yarn prei18n:extract"
+    "prestart": "yarn graphql:generate && yarn prei18n:extract",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -160,5 +161,7 @@
     ]
   },
   "license": "GPL-3.0-or-later",
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
